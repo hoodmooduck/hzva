@@ -1,0 +1,185 @@
+.hazGames{
+    width: 100%;
+		margin-bottom: 300px;
+    	.hazGamesColumn{
+				width: 100%;
+					.hazGamesTitle{
+						margin-bottom: 72px;
+					}
+					.hazGamesMainBlock{
+						width: 100%;
+						.gameBlock{
+							box-sizing: border-box;
+							width: 100%;
+							height: 760px;
+							position: relative;
+							background: #171717; 
+							margin: 0 0 48px 0;
+							overflow: hidden;
+							.hazGamesStartGame_hide{
+								transition: 0.2s;
+								display: none;
+								
+							}
+							.hazGamesStartGame{
+								position: absolute;
+								opacity: 1;
+								bottom: 52px;
+								padding: 0 0 0 48px;
+								z-index: 11;
+								
+								.hazGamesStartGameText{
+									font-style: normal;
+									font-weight: 400;
+									font-size: 40px;
+									line-height: 110%;
+									margin-bottom: 32px;
+									
+								}
+							
+								.hazGamesStartGameButton{
+									padding: 0 0 2px 0;
+								border: 2px solid #E6007E;
+								background-size: 100% 100%;
+								width: 253px;
+    							height: 63px;
+    							display: flex;
+    							justify-content: center;
+    							align-items: center;	
+								transform: skew(-8deg);
+								span{
+									transform: skew(8deg);
+									color: #E6007E;
+								}
+								&:hover{
+									transition: 0.3s;
+									background: #E6007E;
+									color: #fff;
+									span{
+										
+										color: #fff;
+									}
+								}	
+								}
+							}
+						}
+						
+					}
+    	}
+}
+
+.noTarget{
+	width: 0;
+}
+
+
+@media all and (max-width: 1215px){
+	.hazGames{
+		
+			margin-bottom: 200px;
+			.hazGamesColumn{
+					width: 100%;
+						.hazGamesTitle{
+							margin-bottom: 36px;
+						}
+						.hazGamesMainBlock{
+							
+							.gameBlock{
+								box-sizing: border-box;
+								width: 680px;
+								height: 422px;
+								position: relative;
+								background: #171717; 
+								margin: 0 0 48px 0;
+								overflow: hidden;
+								.hazGamesStartGame_hide{
+									transition: 0.2s;
+									display: none;
+									
+								}
+								.hazGamesStartGame{
+									position: absolute;
+									opacity: 1;
+									bottom: 32px;
+									padding: 0 0 0 32px;
+									z-index: 11;
+									
+									.hazGamesStartGameText{
+										width: 439px;
+										font-style: normal;
+										font-weight: 400;
+										font-size: 32px;
+										line-height: 110%;
+										margin-bottom: 23px;
+										
+									}
+								
+									.hazGamesStartGameButton{
+									border: 2px solid #E6007E;
+									background-size: 100% 100%;
+									width: 253px;
+									height: 63px;
+									display: flex;
+									justify-content: center;
+									align-items: center;	
+									transform: skew(-8deg);
+									&:hover{
+										transition: 0.3s;
+										background: #E6007E;
+										color: #fff;
+										
+									}	
+									}
+								}
+							}
+							
+						}
+			}
+	}
+}
+
+@media (max-width: 790px){
+	.hazGames{
+		
+		margin-bottom: 207px;
+		.hazGamesColumn{
+				width: 100%;
+				.hazGamesTitle{
+					line-height: 114%;
+				}
+					.hazGamesMainBlock{
+						
+						.gameBlock{
+							box-sizing: border-box;
+							width: 328px;
+							height: 422px;
+							position: relative;
+							background: #171717; 
+							margin: 0 0 48px 0;
+							overflow: hidden;
+							.hazGamesStartGame_hide{
+								transition: 0.2s;
+								display: none;
+								
+							}
+							.hazGamesStartGame{
+								position: absolute;
+								opacity: 1;
+								bottom: 32px;
+								padding: 0 0 0 32px;
+								z-index: 11;
+								
+								.hazGamesStartGameText{
+									width: 100%;
+
+									
+								}
+
+							}
+						}
+						
+					}
+		}
+}
+
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+.mainLinkColumn{
+
+    display: flex;
+    color: white;
+    li{
+        list-style-type:none ;
+        padding: 35px 0 0 0;
+        margin-right: 56px;
+       
+        
+        &:nth-child(4){
+            margin-right: 0px;
+        }
+        a{
+            &:hover{
+                transition: 0.25s;
+                color: #E6007E;
+            }
+            position: relative;
+            text-decoration: none;
+            color: white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+        }
+    }
+}
+

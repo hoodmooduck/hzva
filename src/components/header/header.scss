@@ -1,0 +1,149 @@
+$logoWidth: 220px;
+$logoHeight: 47px;
+
+
+
+.header{
+    position: absolute;
+    width: 100%;
+    padding-bottom: 26px;
+    background: rgb(0, 0, 0, 0.6);
+    backdrop-filter: blur(25px);
+    .headerMenu{
+        left: -2000px;
+        transition: 0.5s;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        padding: 0 0 0 48px ;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(25px);
+        .links{
+            .mainLinkColumn{
+                display: flex;
+                flex-direction: column;
+                .linksItem{
+                    a{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .mainHeadercolumn{
+        position: relative;
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 291px;
+        &:last-child{
+            gap: 0px;
+        }
+        .headerBurgerMenu{
+            display: none;
+            
+            flex-direction: column;
+            width: 32px;
+            margin-top: 43px;
+            span{
+                width: 100%;
+                height: 3px;
+                margin-bottom: 8px;
+                background-color: #E6007E;
+            }
+        }
+        .headerLogo{
+            position: relative;
+            width: $logoWidth;
+            height: $logoHeight;
+            margin-top: 27px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.headerFixed{
+    position: fixed;
+    z-index: 9;
+    animation: show 0.5s ease 1;
+}
+
+.icClose_active{
+    
+    .top{  
+        transform: rotateZ(45deg);
+        
+     }
+     .bottom{
+         position: relative;
+        bottom: 11px;
+        transform: rotateZ(135deg);
+     }
+ }
+ 
+ .active{
+     z-index: 0;
+     position: fixed;
+     left: 0 !important;
+     transform: rotateX(0deg) !important;
+ }
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media all and (max-width: 1215px){
+    .headerLinks{
+        display: none;
+    }
+    .headerBurgerMenu{
+        display: flex !important;
+    }
+}
+
+
+@media (max-width: 790px){
+    .header{
+        .headerMenu{
+          padding: 0 0 0 16px ;
+            .links{
+                .mainLinkColumn{
+                    .linksItem{
+                        a{
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+        }
+        .mainHeadercolumn{
+            .headerLogo{
+                width: 72px;
+                height: 47px;
+                background: #E6007E;
+                transform: skew(-6deg);
+                img{
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
+        
+    }
+    .headerBurgerMenu{
+        margin-right: 16px;
+    }
+
+}
+

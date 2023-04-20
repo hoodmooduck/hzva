@@ -1,0 +1,30 @@
+.cursor{
+    position: fixed;
+    left: -100px;
+    top: -100px;
+    width: 48px;
+    height: 48px;
+    z-index: 50;
+    pointer-events: none;
+    img{
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+    
+
+#linkHover:hover ~ .cursor{
+    transform: scale(7);
+}
+
+.hidden{
+    display: none;
+}
+
+@media all and (max-width: 1215px){
+    .cursor{
+        display: none;
+    }
+}

@@ -1,0 +1,435 @@
+.matizBlock{
+    width: 100%;
+    .matizJump{
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .matizFly{
+            background: url(../../assetss/image/flyMatiz.mp4) no-repeat;
+            background-size: 108% 108%;
+        }
+        .matizBoom{
+            background: url(../../assetss/image/boomMatiz.mp4) no-repeat;
+            background-size: 108% 108%;
+        }
+        .matizJumpInfoBlock{
+            top: 0px;
+            position: absolute;
+            z-index: 1;
+            width: 808px;
+            height: 825px;
+            video{
+                z-index: 0;
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .matizJumpText{
+                padding-top: 712px;
+                font-weight: 400;
+                font-size: 40px;
+                position: relative;
+                z-index: 1;
+                line-height: 160%;
+                .online82k{
+                    display: inline;
+                    &::before{
+                        
+                        content: '';
+                        display: inline-block;
+                        
+                        width: 40px;
+                        height: 40px;
+                        background: url(../../assetss/image/iconOnline.svg) no-repeat;
+                        background-size: 110% 110%;
+                        background-position: center;
+                        margin-left: 16px;
+                        margin-right: 8px;
+                        
+                    }
+                }
+                .online92k{
+                    display: inline;
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        background: url(../../assetss/image/iconOnline.svg) no-repeat;
+                        background-size: 110% 110%;
+                        margin-left: 16px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+        .matizBlockLinesOnline{
+            z-index: -1;
+            padding: 0 0 524px 0;
+            display: flex;
+            flex-direction: column;
+            &:last-child{
+                padding: 0 0 451px 0;
+            }
+            .matizBlockOnlineLine{
+                display: flex;
+                overflow: hidden;
+                flex-wrap: nowrap;
+                margin-top: 71px;
+                position: relative;
+                width: 100%;
+                font-weight: 400;
+                font-size: 150px;
+                line-height: 120%;
+                &:nth-child(2n){
+                    animation: rightSide 5s linear infinite;
+                }
+                &:nth-child(odd){
+                    animation: leftSide 5s linear infinite;
+                }
+               
+            }
+        }
+    }
+    .matizFly{
+        width: 100%;
+        position: relative;
+        .matizFlyText{
+            position: relative;
+            z-index: 1;
+            margin-bottom: 307px;
+            text-align: center;
+        }
+        .matizFlyImgBack{
+            width: 1186px;
+            height: 758px;
+            position: relative;
+            left: -160px;
+            top: 0px;
+            z-index: 20;
+            margin-bottom: 48px;
+            animation: moveMatiz 3s linear infinite;
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .pinkShadow{
+            content: '';
+            position: absolute;
+            width: 558px;
+            height: 558px;
+            background: #E6007E;
+            filter: blur(175px);
+            z-index: -1;
+            left: 27%;
+            top: 20%;
+        }
+    }
+}
+
+@keyframes leftSide {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(-1452px, 0px);
+    }
+}
+
+@keyframes rightSide {
+    0%{
+        transform: translate(-1452px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px); 
+    }
+}
+
+@keyframes moveMatiz {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, -70px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes leftSide_tablet {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(-918px, 0px);   
+    }
+}
+
+@keyframes rightSide_tablet {
+    0%{
+        transform: translate(-918px, 0px);   
+    }
+    100%{
+        transform: translate(0px, 0px); 
+    }
+}
+
+@keyframes leftSide_mobile {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(-466px, 0px);  
+    }
+}
+
+@keyframes rightSide_mobile {
+    0%{
+        transform: translate(-466px, 0px);  
+    }
+    100%{
+        transform: translate(0px, 0px);    
+    }
+}
+
+@keyframes moveMatiz {
+    0%{
+        top: 0;
+    }
+    50%{
+        top: -70px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+
+@media all and (max-width: 1215px){
+    .matizBlock{
+        width: 100%;
+        .matizJump{
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .matizJumpInfoBlock{
+                top: 0px;
+                position: absolute;
+                z-index: 1;
+                width: 504px;
+                height: 514px;
+                .matizJumpText{
+                    width: 100%;
+                    padding-top: 452px;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 160%;
+                    display: inline-block;
+
+                    .online82k{
+                        display: block;
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            
+                            width: 24px;
+                            height: 24px;
+                            
+                            background-size: 110% 110%;
+                            background-position: center;
+                            margin-left: 0;
+                            margin-right: 8px;
+                            
+                        }
+                    }
+                    .online92k{
+                        
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            
+                            background-size: 110% 110%;
+                            margin-left: 0;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+            .matizBlockLinesOnline{
+                z-index: -1;
+                padding: 0 0 524px 0;
+                display: flex;
+                flex-direction: column;
+                &:last-child{
+                    padding: 0 0 291px 0;
+                }
+                .matizBlockOnlineLine{
+                    display: flex;
+                    overflow: hidden;
+                    flex-wrap: nowrap;
+                    margin-top: 71px;
+                    gap: 72px;
+                    position: relative;
+                    width: 100%;
+                    // overflow: hidden;
+                    font-weight: 400;
+                    font-size: 80px;
+                    line-height: 120%;
+                    &:first-child{
+                        margin-top: 35px;
+                    }
+                    &:nth-child(2n){
+                        animation: rightSide_tablet 5s linear infinite;
+                    }
+                    &:nth-child(odd){
+                        animation: leftSide_tablet 5s linear infinite;
+                    }
+                   
+                }
+            }
+        }
+        .matizFly{
+            width: 100%;
+            position: relative;
+            .matizFlyText{
+                width: 600px;
+                margin: auto;
+                margin-left: 37px;
+                margin-bottom: 156px;
+               
+            }
+            .matizFlyImgBack{
+                left: -431px;
+                margin-bottom: 0;
+            }
+            .pinkShadow{
+                left: 10%;
+            }
+        }
+    }
+}
+
+@media (max-width: 790px){
+    .matizBlock{
+        width: 100%;
+        margin-bottom: 90px;
+        .matizJump{
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .matizJumpInfoBlock{
+                top: 0px;
+                position: absolute;
+                z-index: 1;
+                width: 270px;
+                height: 274px;
+                .matizJumpText{
+                    width: 102%;
+                    padding-top: 215px;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 160%;
+                    display: inline-block;
+
+                    .online82k{
+                        display: inline;
+                        margin-left: 4px;
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            
+                            width: 24px;
+                            height: 24px;
+                            
+                            background-size: 110% 110%;
+                            background-position: center;
+                            margin-left: 0;
+                            margin-right: 8px;
+                            
+                        }
+                    }
+                    .online92k{
+                        display: block;
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                           
+                            background-size: 110% 110%;
+                            margin-left: 0;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+            .matizBlockLinesOnline{
+                z-index: -1;
+                padding: 0 0 524px 0;
+                display: flex;
+                flex-direction: column;
+                &:last-child{
+                    padding: 0 0 246px 0;
+                }
+                .matizBlockOnlineLine{
+                    display: flex;
+                    overflow: hidden;
+                    flex-wrap: nowrap;
+                    margin-top: 40px;
+                    gap: 40px;
+                    position: relative;
+                    width: 100%;
+                    // overflow: hidden;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 120%;
+                    &:first-child{
+                        margin-top: 30px;
+                    }
+                    &:nth-child(2n){
+                        animation: rightSide_mobile 5s linear infinite;
+                    }
+                    &:nth-child(odd){
+                        animation: leftSide_mobile 5s linear infinite;
+                    }
+                }
+            }
+        }
+        .matizFly{
+            width: 100%;
+            position: relative;
+            .matizFlyText{
+                width: 90%;
+                font-size: 32px;
+                margin-bottom: 150px;
+                line-height: 106%;
+                margin-left: 0px;
+               
+            }
+            .matizFlyImgBack{
+                width: 590px;
+                height: 378px;
+                left: -220px;
+                margin-bottom: 0;
+            }
+            .pinkShadow{
+                left: 0%;
+            }
+        }
+    }
+
+}

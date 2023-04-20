@@ -1,0 +1,157 @@
+.cardPersonText{
+    width: 600px;
+    height: 700px;
+
+    
+    .cardPersonDescriptionMain{
+        width: 528px;
+        height: 700px;
+        position: relative;
+        .cardPersonTitle{
+            padding: 117px 0 0 0;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 110%;
+            margin-bottom: 24px;
+        }
+        .cardPersonInfo{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #676767;
+            margin-bottom: 40px;
+        }
+        .cardPersonDescription{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 160%;
+        }
+        .cardPersonSocialMedia{
+            width: 100%;
+            height: 72px;
+            display: flex;
+            gap: 28px;
+            position: absolute;
+            bottom: 116px;
+            
+            .cardPersonSocialMediaLinks{
+                
+                display: block;
+               
+                
+            }
+        }
+
+    }
+}
+
+
+@media all and (max-width: 1215px){
+    .cardPersonText{
+        width: 328px;
+        height: 400px;
+    
+        
+        .cardPersonDescriptionMain{
+            width: 328px;
+            height: 440px;
+            position: relative;
+            .cardPersonTitle{
+                width: 100%;
+                padding: 0px 0 0 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 110%;
+            }
+            .cardPersonInfo{
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #676767;
+                margin-bottom: 40px;
+            }
+            .cardPersonDescription{
+                width: 100%;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+            }
+            .cardPersonSocialMedia{
+                width: 100%;
+                height: 72px;
+                display: flex;
+                gap: 28px;
+                position: absolute;
+                bottom: 19px;
+                
+                .cardPersonSocialMediaLinks{
+                    
+                    display: block;
+                   
+                    
+                }
+            }           
+        }
+    }
+}
+
+@media (max-width: 790px){
+    .cardPersonText{
+        width: 328px;
+        height: 400px;
+    
+        
+        .cardPersonDescriptionMain{
+            width: 300px;
+            height: 440px;
+            position: relative;
+            .cardPersonTitle{
+                width: 100%;
+                padding: 0px 0 0 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 110%;
+                margin-bottom: 16px;
+            }
+            .cardPersonInfo{
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #676767;
+                margin-bottom: 24px;
+            }
+            .cardPersonDescription{
+                width: 100%;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+            }
+            .cardPersonSocialMedia{
+                width: 100%;
+                height: 72px;
+                display: flex;
+                gap: 28px;
+                position: absolute;
+                bottom: 19px;
+                
+                .cardPersonSocialMediaLinks{
+                    
+                    display: block;
+                   
+                    
+                }
+            }           
+        }
+    }
+}
+

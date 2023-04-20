@@ -1,0 +1,271 @@
+
+.whoWinGame{
+    width: 100%;
+    height: 1224px;
+    .whoWinGameScene{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .whoWin_smallCircle{
+            text-align: center;
+            white-space: pre-wrap;
+            display: flex;
+            border: 102px solid #171717; 
+            box-sizing: content-box;
+            align-items: center;
+            justify-content: center;
+            bottom: 43.9%;
+            z-index: 15;
+            position: absolute;
+            width: 408px;
+            height: 408px;
+            border-radius: 100%;
+            background: linear-gradient(90deg, #D11B1B 0%, #1B43D1 100%);
+            
+            .whoWinGameButton{
+                span{
+                    display: block;
+                    transform: skew(8deg);
+                }
+                position: absolute;
+                &:hover{
+                    background: #fff;
+                    span{
+                        color: #E6007E;
+                    }
+                }
+            }
+        }
+        .whoWin_bigCircle{
+            position: relative;
+            bottom: 18%;
+            z-index: 0;
+            width: 1224px;
+            height: 1224px;
+            margin: auto;
+            border-radius: 100%;
+            background: linear-gradient(90deg, #D11B1B 0%, #1B43D1 100%);
+            opacity: 0.2;
+            
+            animation: waveCircle 2s ease infinite;
+            .whoWin_middleCircle{
+                
+                animation: waveCircle 2s ease infinite;
+                top: 7.5%;
+                box-sizing: content-box;
+                margin: auto;
+                position: relative;
+                width: 816px;
+                height: 816px;
+                border: 102px solid #171717; 
+                border-radius: 100%;
+                bottom: 0;
+            }
+        }
+        
+        
+    }
+}
+
+.buttonDown{
+    bottom: -5%;
+    &:hover{
+        background: #fff;
+        color: #E6007E;
+    }
+}
+
+.bigText{
+    font-size: 144px;
+    
+}
+
+.clickAnimation{
+    animation: click 0.5s ease 1;
+}
+
+@keyframes click {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.8);}
+    80% {transform: scale(1);}
+}
+
+.smallText{
+    width: 323px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 110%;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.hide{
+    transition: 0.2s;
+    opacity: 0;
+} 
+
+.disapear{
+    display: none;
+}
+
+.blueTeam{
+    background: rgb(27, 67, 209) !important;
+}
+
+.redTeam{
+    background: rgb(209, 27, 27) !important;
+}
+
+@keyframes waveCircle {
+        0% {transform: scale(1);}
+        15% {box-shadow:0 0 0 20px rgba(209, 27, 27, 0.2);}
+        25% {box-shadow:0 0 0 20px rgba(27, 67, 209, 0.2), 0 0 0 40px rgba(209, 27, 27, 0.2);}
+        30% {transform: scale(0.95);}
+        50% {box-shadow:0 0 0 20px rgba(209, 27, 27, 0.2), 0 0 0 40px rgba(27, 67, 209, 0.2), 0 0 0 60px rgba(209, 27, 27, 0.2);}
+        100% {transform: scale(1);}
+}
+
+@media all and (max-width: 1215px){
+    
+.whoWinGame{
+    width: 100%;
+    height: 1224px;
+    .whoWinGameScene{
+        .whoWin_smallCircle{
+            text-align: center;
+            white-space: pre-wrap;
+            display: flex;
+            border: 51px solid #171717; 
+            box-sizing: content-box;
+            align-items: center;
+            justify-content: center;
+            bottom: 69.9%;
+            z-index: 15;
+            position: absolute;
+            width: 226px;
+            height: 226px;
+            border-radius: 100%;
+            background: linear-gradient(90deg, #D11B1B 0%, #1B43D1 100%);
+            
+            .whoWinGameButton{
+                position: absolute;
+                white-space:nowrap;
+                &:hover{
+                    background: #fff;
+                    color: #E6007E;
+                }
+            }
+        }
+        .whoWin_bigCircle{
+            position: relative;
+            bottom: 32%;
+            z-index: 0;
+            width: 680px;
+            height: 680px;
+            margin: auto;
+            border-radius: 100%;
+            background: linear-gradient(90deg, #D11B1B 0%, #1B43D1 100%);
+            opacity: 0.2;
+            
+            animation: waveCircle 2s ease infinite;
+            .whoWin_middleCircle{
+                
+                animation: waveCircle 2s ease infinite;
+                top: 7.5%;
+                box-sizing: content-box;
+                margin: auto;
+                position: relative;
+                width: 453px;
+                height: 453px;
+                border: 51px solid #171717; 
+                border-radius: 100%;
+                bottom: 0;
+            }
+        }
+        
+        
+    }
+}
+.bigText{
+    font-size: 80px;
+    
+}
+.smallText{
+    font-size: 32px;
+}
+}
+
+@media (max-width: 790px){
+.whoWinGame{
+    .whoWinGameScene{
+        width: 628px;
+        
+        .whoWin_smallCircle{
+
+            border: 33px solid #171717; 
+            bottom: 81%;
+            left: 10%;
+            z-index: 15;
+            position: absolute;
+            width: 139px;
+            height: 139px;
+            border-radius: 100%;
+            background: linear-gradient(90deg, #D11B1B 0%, #1B43D1 100%);
+           
+            .whoWinGameButton{
+                position: absolute;
+                white-space: nowrap;
+                &:hover{
+                    background: #fff;
+                    color: #E6007E;
+                }
+            }
+        }
+        .whoWin_bigCircle{
+            position: relative;
+            bottom: 39%;
+            z-index: 0;
+            left: -24%;
+            width: 418px;
+            height: 418px;
+            margin: auto;
+            border-radius: 100%;
+            background: linear-gradient(90deg, #D11B1B 0%, #1B43D1 100%);
+            opacity: 0.2;
+            
+            animation: waveCircle 2s ease infinite;
+            .whoWin_middleCircle{
+                
+                animation: waveCircle 2s ease infinite;
+                top: 7.5%;
+                box-sizing: content-box;
+                margin: auto;
+                position: relative;
+                width: 278px;
+                height: 278px;
+                border: 33px solid #171717; 
+                border-radius: 100%;
+                bottom: 0;
+            }
+        }
+        
+        
+    }
+}
+.bigText{
+    font-size: 80px;
+    
+}
+.smallText{
+    font-size: 22px;
+}
+.buttonDown{
+    bottom: -25%;
+}
+}
+

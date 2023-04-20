@@ -1,0 +1,172 @@
+
+.whoIsHaz{
+    width: 100%;
+
+    .whoIsHazColumn{
+        width: 100%;
+
+        .whoIsHazTitle{
+            margin: 211px 0 0px 0;
+            position: relative;
+
+            .whoIsHazEyes{
+                position: absolute;
+                display: flex;
+                gap: 6px;
+                right: 182px;
+                bottom: 8px;
+
+                div{
+                    width: 50px;
+                    height: 50px;
+                    background: #fff;
+                    transform: skew(-8deg);
+
+                    span{
+                        margin: 0;
+                        position: relative;
+                        display: block;
+                        width: 22px;
+                        height: 20px;
+                        transform: skew(-8deg);
+                        background: #000;
+                        background-position: center;
+                        animation: eyesMover 3.5s ease infinite;
+                        top: 14px;
+                    }
+                }
+            }
+        }
+
+        .whoIsHazGifElement{
+            width: 100%;
+            height: 572px;
+            background: #e0dd;
+            margin: 72px 0 300px 0;
+
+
+            video{
+                -o-object-fit: cover;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+@keyframes eyesMover {
+    0%{
+        left: 47%;
+    }
+    25%{
+        left: 10%;
+    }
+    50%{
+        left: 47%;
+    }
+    75%{
+
+        left: 25%;
+        
+    }
+    100%{
+        left: 47%;
+    }
+}
+
+@media all and (max-width: 1215px){
+
+    .whoIsHaz{
+        width: 100%;
+    
+        .whoIsHazColumn{
+            width: 100%;
+    
+            .whoIsHazTitle{
+                width: 601px;
+                margin-top: 140px !important;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 130%;
+                word-wrap: wrap;
+                .whoIsHazEyes{
+                    position: absolute;
+                    display: flex;
+                    gap: 6px;
+                    right: 48px;
+                    bottom: 9px;
+    
+                    div{
+                        width: 37px;
+                        height: 33px;
+                        background: #fff;
+                        transform: skew(-8deg);
+    
+                        span{
+                            margin: 0;
+                            position: relative;
+                            display: block;
+                            width: 16px;
+                            height: 14px;
+                            transform: skew(-6deg);
+                            background: #000;
+                            animation: eyesMover 3.5s ease infinite;
+                            top: 9px;
+                        }
+                    }
+                }
+            }
+    
+            .whoIsHazGifElement{
+                
+                
+                margin-right: 43px;
+                height: 317px;
+                background: #e0dd;
+                margin: 40px 0 195px 0;
+    
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 790px){
+    .whoIsHaz{
+        width: 100%;
+    
+        .whoIsHazColumn{
+            width: 100%;
+    
+            .whoIsHazTitle{
+                width: 100%;
+                line-height: 113%;
+                margin-top: 168px !important;
+                .whoIsHazEyes{
+                    right: 18px;
+                    bottom: 6px;
+                }
+            }
+    
+            .whoIsHazGifElement{ 
+                padding-right: 16px;
+                margin-right: 43px;
+                height: 317px;
+                background: #000;
+                margin: 40px 0 195px 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+

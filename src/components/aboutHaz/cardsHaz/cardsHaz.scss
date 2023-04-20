@@ -1,0 +1,107 @@
+.cardsHaz{
+    width: 100%;
+    
+    .cardsHazColumn{
+        width: 100%;
+        display: flex;
+        position: relative;
+        height: 6312px;
+        &::-webkit-scrollbar{
+            width: 0px;
+        }
+
+        .cardsHazRow{
+            margin-left: 600px;
+            width: 50%;
+            display: flex;
+            gap: 96px;
+            flex-direction: column;
+            position: relative;
+
+        }
+
+        .cardHazConteiner{
+                height: 700px;
+                width: 100%;
+                overflow: hidden;
+                position: absolute;
+                margin-left: 0px ;
+                
+           .cardsHazRowText{
+                margin-left: 0px;
+                width: 100%;
+ 
+             .cardPersonText{
+                 .cardPersonDescriptionMain{
+                     transform: translate(0px, 0%);
+                     
+                 }
+                 
+                 
+             }
+        }
+        
+        }
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+}
+
+@media all and (max-width: 1215px){
+    .cardsHaz{
+        width: 100%;
+
+        .cardsHazColumn{
+            width: auto;
+            display: flex;
+            padding-left: 10px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            flex-direction: column-reverse;
+            position: relative;
+            gap: 0px;
+            height: 814px;
+            &::-webkit-scrollbar{
+                width: 0px;
+                height: 0px;
+            }
+            .cardHazConteiner{
+                height: 440px;
+                width: 100%;
+                position: relative;
+                margin-left: 0px ;
+                overflow: visible;
+            }
+            .cardsHazRow{
+                margin-left: 0px;
+                width: 328px;
+                height: 440px;
+                display: flex;
+                gap: 24px;
+                flex-direction: row;
+                position: relative;
+                margin-top: 38px;
+            }
+            &::-webkit-scrollbar{
+                width: 0;
+            }
+        }
+    }
+      
+}
+
+.fixed{
+    top: 100px !important;
+    position: fixed !important;
+}
+.absoluteBottom{
+    top: 5644px !important;
+    position: absolute !important;
+}
+
+
+@media (max-width: 790px){
+
+
+}

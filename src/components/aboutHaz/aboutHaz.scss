@@ -1,0 +1,39 @@
+.aboutHaz{
+    width: 100%;
+    margin-bottom: 204px;
+    .aboutHazColumn{
+        width: 100%;
+        .aboutHazTitle{
+           margin-bottom: 96px; 
+        }
+    }
+}
+
+
+@media all and (max-width: 1215px){
+.aboutHaz{
+        
+        .aboutHazColumn{
+            .aboutHazTitle{
+                width: 87%;
+                margin-bottom: 48px; 
+                line-height: 108%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 790px){
+    .aboutHaz{
+        
+        .aboutHazColumn{
+            .aboutHazTitle{
+                width: 300px;
+                line-height: 108%;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+}

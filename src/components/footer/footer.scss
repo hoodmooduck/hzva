@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic,latin);
+
+$color_grey: #171717;
+
+.footer{
+    margin-bottom: 48px;
+    width: 100%;
+    padding-top: 48px;
+    border-top: 1px solid $color_grey;
+    .footerColumn{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        .footerRow{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .footerRow_elem{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .noCommertion{
+                    color: $color_grey;
+                }
+                .sticker{
+                    margin-right: 12px;
+                    width: 32px;
+                    height: 32px;
+                    padding: 4px;
+                    border-radius: 100%;
+                    background: $color_grey;
+                    
+                }
+                a{
+                    span{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 6px;
+                        p{
+                            font-family: 'Roboto';
+                            margin-bottom: 2px;
+                        }
+                        
+                        .logoStarih_span{
+                            width: 124px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+            .footerLinks{
+                width: 25%;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 120%;
+                text-align: center;
+                border: 1px solid $color_grey;
+                padding: 33.5px 0 38.5px 0;
+                &:hover{
+                    transition: 0.25s;
+                    
+                    color: #E6007E;
+                    background: #fff;
+                }
+                &:active{
+                    opacity: 0.5;
+                }
+            }
+            .footerLogo{
+                width: 496px;
+                height: 96px;
+                background: $color_grey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .logoHaz{
+                    width: 262px;
+                    height: 56px;
+                }
+                .logoStarih{
+                    width: 298px;
+                    height: 39px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media all and (max-width: 1215px){
+    .footer{
+        width: 100%;
+        padding-top: 48px;
+        border-top: 1px solid $color_grey;
+        .footerColumn{
+            width: 680px; 
+            .rowSpec{
+                flex-direction: column;
+                gap: 26px;
+            } 
+            .footerRow{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                .footerRow_elem{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    span{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 6px;
+                        p{
+                            font-family: 'Roboto';
+                            margin-bottom: 2px;
+                        }
+                        
+                        .logoStarih_span{
+                            width: 124px;
+                            height: 16px;
+                        }
+                    }
+                }
+                .footerLinks{
+                    width: 50%;
+                    font-weight: 400;
+                    
+                    font-size: 20px;
+                    line-height: 120%;
+                    text-align: center;
+                    border: 1px solid $color_grey;
+                    padding: 33.5px 0 38.5px 0;
+                }
+                .footerLogo{
+                    width: 280px;
+                    height: 96px;
+                    background: $color_grey;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .logoHaz{
+                        width: 190px;
+                        height: 40px;
+                    }
+                    .logoStarih{
+                        width: 196px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 790px){
+    .footer{
+        width: 100%;
+        padding-top: 48px;
+        .footerColumn{
+
+            width: 328px; 
+            gap: 40px;
+            .rowSpec{
+                flex-direction: column;
+                gap: 26px;
+            } 
+            .footerRow{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                .footerRow_elem{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                    span{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 6px;
+                        p{
+                            font-family: 'Roboto';
+                            margin-bottom: 2px;
+                        }
+                        
+                        .logoStarih_span{
+                            width: 124px;
+                            height: 16px;
+                        }
+                    }
+                }
+                .footerLinks{
+                    width: 100%;
+                    font-weight: 400;
+                    
+                    font-size: 20px;
+                    line-height: 120%;
+                    text-align: center;
+                    border: 1px solid $color_grey;
+                    padding: 33.5px 0 38.5px 0;
+                }
+                .footerFeatSticker{
+                    margin-top: 27px;
+                    margin-bottom: 27px;
+                }
+                .footerLogo{
+                    width: 100%;
+                    
+                    height: 96px;
+                    background: $color_grey;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .logoHaz{
+                        width: 190px;
+                        height: 40px;
+                    }
+                    .logoStarih{
+                        width: 196px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+.eyeMover{
+    margin-top: 15.4px;
+    margin-left: 18.1px;
+    position: absolute;
+    gap: 2px;
+    display: flex;
+    .eye{
+        width: 17.2px;
+        height: 15.2px;
+        background: url(../../../assetss/image/whoishaz_eyeSubstrate.svg) no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+        .eyePupil{
+            animation: 1s ease 1;
+            left: 0;
+            top: 0;
+            width: 9.5px;
+            height: 8.6px;
+            background: url(../../../assetss/image/whoishaz_eye.svg);
+            background-size: 100% 100%;
+            background-position: center;
+            position: absolute;
+        }
+    }
+}

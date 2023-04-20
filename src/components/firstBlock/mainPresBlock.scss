@@ -1,0 +1,303 @@
+
+
+.mainPresBlock{
+    width: 100%;
+    position: relative;
+    .mainPresBlockPictureColumn{
+        display: none;
+    }
+    .mainPresBlockPictureConteiner{
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .mainPresBlock_arrowLink{
+        margin: 57px auto;
+        position: relative;
+        animation: arrowDwn 2s linear infinite;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .mainPresBlockColumn{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 400px 0 284px 0;
+        .mainPresBlock_textColumn{
+            width: 100%;
+            position: relative;
+            z-index: 10;
+            .mainPresBlock_textBlock{
+                
+                .mainPresBlock_text{
+                    position: relative;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 80px;
+                    line-height: 120%; 
+                    text-align: center;    
+                    
+                }
+                &:last-child{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    margin-top: 1px;
+                    
+                }
+                span{
+                    margin-left: 24px;
+                    display: inline-block;
+                    max-height: 67px;
+                    min-height: 67px;
+                    color: #E6007E;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 80px;
+                    line-height: 48%; 
+                    text-align: center; 
+                    padding: 0 28px;
+                    background: #fff;
+                    transform: skew(-9deg);
+                    span{
+                        padding: 0;
+                        transform: skew(9deg);
+                        margin-left: 0px;
+                        &:hover{
+                            box-shadow: 0px 0px #E6007E;
+                            text-shadow: 0px 0 #fff;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: -5px 5px #E6007E;
+                        text-shadow: 10px 0 #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes arrowDwn {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, 20px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+
+@keyframes rowLeft {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(-362px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes rowRight {
+    0%{
+        transform: translate(-362px, 0px);
+    }
+    50%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(-362px, 0px);
+    }
+}
+
+@keyframes rowLeftPhone {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(-131px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes rowRightPhone {
+    0%{
+        transform: translate(-131px, 0px);
+    }
+    50%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(-131px, 0px);
+    }
+}
+
+@media all and (max-width: 1215px){
+    .mainPresBlock{
+        .mainPresBlockPictureConteiner{
+            display: none;
+        }
+        .mainPresBlockPictureColumn{
+            padding: 100px 0 0 0;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: auto;
+            height: 100%;
+           
+            .mainPresBlockPictureRow{
+                height: 25%;
+                display: flex;
+                position: relative;
+                gap: 48px;
+                .picture{
+                    position: static;
+                    max-width: 200px;
+                    max-height: 200px;
+                    min-width: 200px;
+                    min-height: 200px;
+                   
+                }
+            }
+            .row1{
+                animation: rowLeft 40s linear infinite;
+            }
+            .row2{
+                animation: rowRight 40s linear infinite;
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 790px){
+    .mainPresBlock{
+        .mainPresBlock_arrowLink{
+            width: 44px;
+            height: 30px;
+            margin: 17px auto 80px auto;
+            position: relative;
+            animation: arrowDwn 2s linear infinite;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .mainPresBlockPictureConteiner{
+            display: none;
+        }
+        .mainPresBlockColumn{
+            width: 94%;
+            display: flex;
+            flex-direction: column;
+            padding: 263px 0 114px 0;
+            .mainPresBlock_textColumn{
+                width: 100%;
+                position: relative;
+                z-index: 10;
+                .mainPresBlock_textBlock{
+                    
+                    .mainPresBlock_text{
+                        position: relative;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 120%; 
+                        text-align: center;    
+                        text-align: center;
+                    }
+                    &:last-child{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        margin-top: 1px;
+                        
+                    }
+                    span{
+                        margin-left: 0px;
+                        display: inline-block;
+                        width: 133px;
+                        max-height: 33px;
+                        min-height: 36px;
+                        color: #E6007E;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 64%; 
+                        text-align: center; 
+                        padding: 0 0px;
+                        transform: skew(-9deg);
+                        background: #fff;
+                        span{
+                            width: 120px;
+
+                        }
+                    }
+                }
+            }
+        }
+        .mainPresBlockPictureColumn{
+            padding: 116px 0 0 0;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: auto;
+            height: 100%;
+           
+            .mainPresBlockPictureRow{
+                height: 25%;
+                display: flex;
+                position: relative;
+                gap: 48px;
+                .picture{
+                    position: static;
+                    max-width: 100px;
+                    max-height: 100px;
+                    min-width: 100px;
+                    min-height: 100px;
+                   
+                }
+            }
+            .row1{
+                animation: rowLeftPhone 15s linear infinite;
+            }
+            .row2{
+                animation: rowRightPhone 15s linear infinite;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
