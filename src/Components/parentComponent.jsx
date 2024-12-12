@@ -1,6 +1,4 @@
 import React from "react";
-import ContextComp from "./parentContext.js";
-import ContextContent from "./contextConetnt.js";
 import Header from "./header/header.jsx";
 import MainPresBlock from "./firstBlock/mainPresBlock.jsx";
 import WhoIsHaz from "./whoIsHazyaeva/whoIsHaz.jsx";
@@ -12,16 +10,17 @@ import MerchBLock from "./merchBLock/merchBLock.jsx";
 import AboutUs from "./aboutUs/aboutUs.jsx";
 import Footer from "./footer/footer.jsx";
 import Cursor from "./cursor/cursor.jsx";
-import ModalWindow from "./aboutUsModal/aboutUsModal";
 import UpComponent from "./upComponent/upComponent.jsx";
 import Loader from "./loader/loader.jsx";
-import { useState, useEffect } from "react";
+import { Provider } from "react-redux";
+import store from "../Modules/Redux/store.ts";
+import Modal from "./Modal/Modal.tsx";
 
 function Parent() {
   return (
-    <>
+    <Provider store={store}>
       <Loader />
-      <ModalWindow />
+      <Modal />
       <UpComponent />
       <Cursor />
       <Header />
@@ -34,7 +33,7 @@ function Parent() {
       <MerchBLock />
       <AboutUs />
       <Footer />
-    </>
+    </Provider>
   );
 }
 

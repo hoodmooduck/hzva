@@ -4,7 +4,7 @@
     top: -100px;
     width: 48px;
     height: 48px;
-    z-index: 50;
+    z-index: 1000;
     pointer-events: none;
     img{
         border-radius: 100%;
@@ -13,7 +13,7 @@
     }
 }
 
-    
+
 
 #linkHover:hover ~ .cursor{
     transform: scale(7);

@@ -1,18 +1,19 @@
 import * as React from "react";
 import { useCallback } from "react";
-import { useAppDispatch } from "./hooks-redux";
+import { useAppDispatch } from "./hooksRedux.ts";
 import {
   closeModalHandler,
   openModalHandler,
-} from "../Modules/Redux/actions/modal";
+} from "../Modules/Redux/actions/modal.ts";
+import ExileModal from "../Components/ExileModal/ExileModal.tsx";
 
 export const componentNameMap = {
   Exile: "ModalExile",
   AboutUs: "ModalAboutUs",
 };
 
-export const componentMap: Record<string, React.ComponentType<never>> = {
-  // [componentNameMap.Exile]: Exile,
+export const componentMap: Record<string, React.ComponentType<any>> = {
+  [componentNameMap.Exile]: ExileModal,
   // [componentNameMap.AboutUs]: AboutUs,
 };
 

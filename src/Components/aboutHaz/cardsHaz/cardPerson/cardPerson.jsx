@@ -1,5 +1,5 @@
 import "./cardPerson.scss";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 function CardPerson(props) {
   const [scrolling, setScrolling] = useState();
