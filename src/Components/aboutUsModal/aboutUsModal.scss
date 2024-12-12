@@ -1,0 +1,285 @@
+.mainAboutUsModal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .iconClose{
+        width: 32px;
+        height: 32px;
+        position: relative;
+        right: -32px;
+        top: -309px;
+        z-index: 210;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .aboutUsModal{
+        width: 808px;
+        height: 650px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background: #171717;
+
+        .aboutUsModalLinks{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 48px;
+            position: relative;
+            z-index: 10;
+
+            .aboutUsModalLink{
+                align-items: center;
+                display: flex;
+                border: 0px;
+                background: #171717;
+                font-size: 16px;
+            }
+            .tg{
+                &::before{
+                    margin-right: 12px;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                    content: '';
+                    background: url(../../Shared/image/tg.svg);
+                }
+            }
+            .crpt{
+                .tooltip{
+                    position: absolute;
+                    z-index: 12;
+                    top: -30px;
+                    opacity: 0;
+                    transition: 0.3s;
+                    left: 30%;
+                    background: #2B2B2B;
+                    padding: 8px;
+                    &::before{
+                        content: '';
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+                        bottom: -6px;
+                        position: absolute;
+                        z-index: 12;
+                        transform: rotate(45deg);
+                        background: #2B2B2B;
+                    }
+                }
+                position: relative;
+                &:hover {
+                    .tooltip{
+                         opacity: 1;
+                    }
+
+                }
+                &::before{
+                    margin-right: 12px;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                    content: '';
+                    background: url(../../Shared/image/crpt.svg);
+                }
+            }
+            .alr{
+                &::before{
+                    margin-right: 12px;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                    content: '';
+                    background: url(../../Shared/image/alr.svg);
+                }
+            }
+        }
+        .aboutUsModalText{
+            padding: 48px;
+            box-sizing: content-box;
+            .aboutUsModalTitle{
+
+                font-size: 40px;
+            }
+            .aboutUsModalDescription{
+                font-family: 'Roboto';
+                padding-top: 24px;
+                line-height: 160%;
+                font-weight: normal;
+                font-size: 22px;
+            }
+        }
+        .aboutUsModalPicture{
+            padding: 48px;
+            padding-bottom: 0;
+            box-sizing: content-box;
+            width: 712px;
+            height: 319px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                background: #E6007E;
+            }
+        }
+    }
+}
+
+.hide{
+    display: none;
+}
+
+@media all and (max-width: 1215px){
+    .mainAboutUsModal{
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        z-index: 10;
+        margin-left: 16px;
+        .iconClose{
+            width: 32px;
+            height: 32px;
+            position: relative;
+            right: 32px;
+            top: -265px;
+            z-index: 210;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .aboutUsModal{
+
+            width: 680px;
+            height: 450px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background: #171717;
+
+            .aboutUsModalLinks{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 0 48px;
+                position: relative;
+
+                .aboutUsModalLink{
+                    align-items: center;
+                    display: flex;
+                    border: 0px;
+                    background: #171717;
+                    margin-bottom: 24px;
+                }
+                .tg{
+                    margin-bottom: 0;
+                }
+                }
+            .aboutUsModalText{
+                padding: 48px;
+                box-sizing: content-box;
+                .aboutUsModalTitle{
+                    line-height: 110%;
+                    font-size: 40px;
+                }
+                .aboutUsModalDescription{
+                    font-family: 'Roboto';
+                    padding-top: 24px;
+
+                    font-weight: normal;
+                    font-size: 22px;
+                }
+            }
+            .aboutUsModalPicture{
+                padding: 32px;
+                padding-bottom: 0;
+                box-sizing: content-box;
+                width: 616px;
+                height: 276px;
+                img{
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 790px){
+    .mainAboutUsModal{
+        width: 96%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        z-index: 10;
+
+
+        .iconClose{
+            width: 32px;
+            height: 32px;
+            position: relative;
+            right: 32px;
+            top: -265px;
+            z-index: 210;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .aboutUsModal{
+
+            width: 328px;
+            height: 450px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background: #171717;
+            .aboutUsModalLinks{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 0 24px;
+                margin-bottom: 32px;
+            }
+            .aboutUsModalText{
+                padding: 16px;
+                box-sizing: content-box;
+                .aboutUsModalTitle{
+
+                    font-size: 32px;
+                }
+                .aboutUsModalDescription{
+                    font-family: 'Roboto';
+                    padding-top: 24px;
+
+                    font-weight: normal;
+                    font-size: 18px;
+                }
+            }
+            .aboutUsModalPicture{
+                padding: 16px;
+                padding-bottom: 0;
+                box-sizing: content-box;
+                width: 286px;
+                height: 150px;
+                img{
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+        }
+    }
+}
+
+.hide{
+    display: none;
+}

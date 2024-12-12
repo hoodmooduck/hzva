@@ -1,0 +1,154 @@
+$pink: #E6007E;
+.aboutUs{
+    width: 100%;
+    margin-bottom: 300px;
+
+    .aboutUsColumn{
+        width: 100%;
+        height: 953px;
+        background: url(../../Shared/image/artAboutUs.png) no-repeat, $pink;
+        background-position: bottom;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 681px;
+        .aboutUsButton{
+            div{
+                transform: skew(8deg);
+            }
+            &:hover{
+                transition: 0.3s;
+                background: #fff;
+                color: #E6007E;
+                div,span{
+                    color: #E6007E;
+                }
+            }
+            transform: skew(-7deg);
+            margin: auto;
+            width: 1121.5px;
+            height: 63px;
+            text-align: center;
+            padding-top: 17px;
+            font-size: 16px;
+            line-height: 160%;
+            background: $pink;
+        }
+        .aboutUsLogo{
+            width: 860px;
+            height: 115px;
+            img{
+                margin-left: 182px;
+                margin-top: 96px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.hide{
+    display: none;
+}
+
+@media all and (max-width: 1215px){
+    $pink: #E6007E;
+    .aboutUs{
+        width: 100%;
+        margin-bottom: 199px;
+
+        .aboutUsColumn{
+            width: 680px;
+            height: 530px;
+            background: url(../../Shared/image/artAboutUs.png) no-repeat, $pink;
+            background-position: bottom;
+            display: flex;
+            flex-direction: column;
+            gap: 336px;
+            background-size: 100%;
+            .aboutUsButton{
+                &:hover{
+                    transition: 0.3s;
+                    background: #fff;
+                    color: #E6007E;
+                    span{
+                        color: #E6007E;
+                    }
+                }
+                transform: skew(-7deg);
+                margin: auto;
+                width: 616px;
+                height: 63px;
+                text-align: center;
+                padding-top: 17px;
+                font-size: 16px;
+                line-height: 160%;
+                background: $pink;
+            }
+            .aboutUsLogo{
+                width: 478px;
+                height: 64px;
+                img{
+                    margin-left: 101px;
+                    margin-top: 48px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 790px){
+    .aboutUs{
+        width: 100%;
+        margin-bottom: 199px;
+
+        .aboutUsColumn{
+            width: 100%;
+            height: 411px;
+            background: url(../../Shared/image/artAboutUs.png) no-repeat, $pink;
+            background-position: bottom;
+            display: flex;
+            flex-direction: column;
+            gap: 247px;
+            background-size: 130%;
+            width: 97%;
+            .aboutUsButton{
+                width: 270px;
+                &:hover{
+                    transition: 0.3s;
+                    background: #fff;
+                    color: #E6007E;
+
+                }
+
+                transform: skew(-7deg);
+                margin: auto;
+                width: 250px;
+                height: 63px;
+                text-align: center;
+                padding-top: 17px;
+                font-size: 16px;
+                line-height: 160%;
+                background: $pink;
+                span{
+                    display: none;
+                }
+            }
+            .aboutUsLogo{
+                width: 268px;
+                height: 36px;
+                img{
+                    margin-left: 32px;
+                    margin-top: 39px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+
+}
