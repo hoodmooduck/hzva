@@ -4,8 +4,8 @@ import pictures from "./pictures.js";
 import Picture from "./pictures/pictures.jsx";
 
 function MainPresBlock() {
-  let picturesMod1 = pictures.slice(6);
-  let picturesMod2 = pictures.slice(0, 6);
+  let picturesMod1 = [...pictures.slice(6), ...pictures.slice(6)];
+  let picturesMod2 = [...pictures.slice(0, 6), ...pictures.slice(0, 6)];
 
   return (
     <div className="mainPresBlock">
