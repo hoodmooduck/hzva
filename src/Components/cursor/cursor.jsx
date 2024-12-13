@@ -1,22 +1,29 @@
 import "./cursor.scss";
 import cursorImg from "../../Shared/image/cursor_48x48.svg";
-import { useEffect, useState } from "react";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Cursor() {
-  const cursor = useRef("cursor");
-  const [checkCursor, setCheckCursor] = useState(true);
+  const cursorRef = useRef(null);
+
   useEffect(() => {
-    document.addEventListener("mousemove", (e) => {
-      const x = e.clientX - 20;
-      const y = e.clientY - 20;
-      cursor.current.style.left = x + "px";
-      cursor.current.style.top = y + "px";
-    });
-  });
+    const handleMouseMove = (e) => {
+      if (cursorRef.current) {
+        const x = e.clientX + 80;
+        const y = e.clientY + 80;
+        cursorRef.current.style.transform = `translate(${x}px, ${y}px)`;
+        console.log(x, y);
+      }
+    };
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  if (window.innerWidth <= 1215) return null;
 
   return (
-    <div ref={cursor} className={checkCursor ? "cursor" : "hidden"}>
+    <div ref={cursorRef} className="cursor">
       <img src={cursorImg} alt="cursor" />
     </div>
   );

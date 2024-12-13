@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import Header from "./header/header.jsx";
 import MainPresBlock from "./firstBlock/mainPresBlock.jsx";
 import WhoIsHaz from "./whoIsHazyaeva/whoIsHaz.jsx";
@@ -12,13 +12,18 @@ import Footer from "./footer/footer.jsx";
 import Cursor from "./cursor/cursor.jsx";
 import UpComponent from "./upComponent/upComponent.jsx";
 import Loader from "./loader/loader.jsx";
-import { Provider } from "react-redux";
-import store from "../Modules/Redux/store.ts";
 import Modal from "./Modal/Modal.tsx";
+import { componentNameMap, useModalContext } from "../Hooks/useModalContext.ts";
 
 function Parent() {
+  const { openModal } = useModalContext();
+
+  useEffect(() => {
+    openModal(componentNameMap.Notification, false, false);
+  }, []);
+
   return (
-    <Provider store={store}>
+    <>
       <Loader />
       <Modal />
       <UpComponent />
@@ -33,7 +38,7 @@ function Parent() {
       <MerchBLock />
       <AboutUs />
       <Footer />
-    </Provider>
+    </>
   );
 }
 

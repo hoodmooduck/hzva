@@ -14,12 +14,6 @@ function Loader() {
   }, 10000);
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (!loading) {
-      html.classList.add("disableScroll");
-    }
-    if (loading) {
-      html.classList.remove("disableScroll");
-    }
   }, [loading]);
 
   return (

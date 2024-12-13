@@ -1,11 +1,12 @@
 import "./aboutUs.scss";
 import logoStarojil from "../../Shared/image/logo_aboutUs.svg";
+import {
+  componentNameMap,
+  useModalContext,
+} from "../../Hooks/useModalContext.ts";
 
 function AboutUs() {
-  function changeOpen() {
-    document.querySelector("html").classList.add("disableScroll");
-  }
-
+  const { openModal } = useModalContext();
   return (
     <div className="aboutUs">
       <div className="conteiner">
@@ -13,8 +14,10 @@ function AboutUs() {
           <div className="aboutUsLogo">
             <img src={logoStarojil} alt="LogoStarojil" />
           </div>
-          <div onClick={changeOpen} className="aboutUsButton hoverAnimBtn">
-            <div>
+          <div className="aboutUsButton hoverAnimBtn">
+            <div
+              onClick={() => openModal(componentNameMap.AboutUs, true, true)}
+            >
               Узнать подробнее <span>о Старожилах</span>
             </div>
           </div>

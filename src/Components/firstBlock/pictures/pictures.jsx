@@ -12,9 +12,10 @@ function Picture(props) {
       if (document.documentElement.offsetWidth > 1215) {
         let x = e.x;
         let y = e.y;
-        movePicRef.current.style.transform = `translateX(${
-          x / 100
-        }%) translateZ(${0}px) translateY(${y / 100}%)`;
+        movePicRef.current.style.transform = `
+        translateX(${x / 100}%) 
+        translateZ(${0}px) 
+        translateY(${y / 100}%)`;
         return (e) => window.removeEventListener("mousemove", movePicture());
       }
     });
