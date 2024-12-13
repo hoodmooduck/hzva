@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="yandex-verification" content="984c04ba750a15c8" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="yandex-verification" content="984c04ba750a15c8"/>
 
     <meta
-      name="description"
-      content="give me money, please, i poor student"
+            name="description"
+            content="give me money, please, i poor student"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg"/>
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.svg">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
 
     <title>Хазяева</title>
-  </head>
-  <body>
+</head>
+<body>
+<script>
+    const updateViewportHeight = () => {
+        const vh = window.visualViewport
+            ? window.visualViewport.height
+            : Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+        document.documentElement.style.setProperty('--vh', `${Math.floor(vh)}px`);
 
-  </body>
+        const sidePanelRoot = document.getElementById('side-panel-root');
+        if (sidePanelRoot) {
+            sidePanelRoot.style.setProperty('--vh', `${vh}px`);
+        }
+    };
+
+    window.addEventListener('resize', updateViewportHeight, { passive: true });
+    window.addEventListener('load', updateViewportHeight);
+</script>
+
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div id="side-panel-root"></div>
+</body>
 </html>

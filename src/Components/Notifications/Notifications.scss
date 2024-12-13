@@ -23,7 +23,7 @@
     padding: 48px;
 
     @media (max-width: 1100px) {
-      padding: 24px 24px 0 24px;
+      padding: 24px;
     }
   }
 
@@ -87,12 +87,8 @@
       font-size: 32px;
     }
 
-    &__text p{
+    &__text {
       font-size: 18px;
-    }
-
-    &__button {
-      margin-bottom: 24px;
     }
   }
 }

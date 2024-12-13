@@ -12,6 +12,10 @@
   top: 0;
   left: 0;
 
+  @media (max-width: 950px) {
+    height: var(--vh);
+  }
+
   &__overlay {
     position: absolute;
     width: 100%;
@@ -72,14 +76,12 @@
 @media (max-width: 950px) {
   .modal {
     &__view {
-      width: 100vw;
-      height: 100vh;
       max-height: unset;
     }
     &__close-btn {
       transform: translate(0, 0);
-      right: 8px;
-      top: 8px;
+      right: 16px;
+      top: 16px;
     }
   }
 }
